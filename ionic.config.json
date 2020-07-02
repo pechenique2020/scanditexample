@@ -1,0 +1,7 @@
+{
+  "name": "scanditexam",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,26 @@
+.tabDesactived {
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+
+    &.active {
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        // border-bottom-color: #022169;
+    }
+}
+
+.optionDisactived {
+    color: #022169;
+
+    &.active {
+        color: #022169;
+    }
+}
+
+.tabDesactivedAlways {
+    color: #5f719f;
+
+    &.active {
+        color: #5f719f;
+    }
+}

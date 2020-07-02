@@ -1,0 +1,32 @@
+
+<ion-content >
+
+  <ion-list>
+
+    <ion-item *ngFor="let entriesRecord of entriesList">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="7">
+            <h2>{{entriesRecord.ean}}</h2>
+          </ion-col>
+          <ion-col size="1">
+            <ion-button *ngIf="entriesRecord.listEans.length>1" class="ten-home-button-grouping-box" shape="round" fill="clear">
+              {{entriesRecord.listEans.length}}
+            </ion-button>
+          </ion-col>
+          <ion-col size="4" class="ion-align-self-end">
+            <ion-icon *ngIf="entriesRecord.listEans.length>1; else opcionBlockBtn01" class="btnReduce" name="remove-circle" (click)="reduceListEansInPersistence(entriesRecord);"></ion-icon>
+            <ng-template #opcionBlockBtn01>
+              <ion-icon class="btnReduceDsb" name="remove-circle"></ion-icon>
+            </ng-template>
+            <ion-icon class="btnTrash" name="trash" (click)="presentConfirm(entriesRecord);"></ion-icon><br>
+            <ion-note class="textNote" item-end>{{entriesRecord.createdOn}}</ion-note>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

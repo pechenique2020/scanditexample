@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="1" (click)="goTo_BackPage();">
+          <ion-icon class="btnBack" name="chevron-back"></ion-icon>
+        </ion-col>
+        <ion-col size="11">
+          <ion-title>Scandit</ion-title>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div id="result"></div>
+  <div id="scanner"></div>
+  <ion-button *ngIf="showSingleButton" class="button" mode="ios" (click)="startScanning()">Start Scanning
+  </ion-button>
+  <ion-button *ngIf="showSingleDoneButton" class="button" mode="ios" (click)="doneSingle()">Done</ion-button>
+</ion-content>
+
+<!-- <div id="result"></div>
+<div id="scanner"></div>
+<ion-button *ngIf="showSingleButton" class="button" mode="ios" (click)="startScanning()">Start Scanning
+</ion-button>
+<ion-button *ngIf="showSingleDoneButton" class="button" mode="ios" (click)="doneSingle()">Done</ion-button> -->
+
+<!-- 
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button>
+    </ion-tab-button>
+    <ion-tab-button class="tabDesactived" [ngClass]="{'active' : scanMode==1}" (click)="changeScanMode(1);">
+      <ion-icon class="optionDisactived" [ngClass]="{'active' : scanMode==1}" name="pause"></ion-icon>
+      <ion-label class="optionDisactived" [ngClass]="{'active' : scanMode==1}">Paso a paso</ion-label>
+    </ion-tab-button>
+    <ion-tab-button class="tabDesactived" [ngClass]="{'active' : scanMode==2}" (click)="changeScanMode(2);">
+      <ion-icon class="optionDisactived" [ngClass]="{'active' : scanMode==2}" name="play"></ion-icon>
+      <ion-label class="optionDisactived" [ngClass]="{'active' : scanMode==2}">Contínuo</ion-label>
+    </ion-tab-button>
+    <ion-tab-button>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs> -->

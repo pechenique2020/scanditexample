@@ -1,0 +1,93 @@
+.button {
+  text-align: center;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 50%;
+  font-size: 22px;
+  transform: translateY(-50%);
+}
+
+.button strong {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.button p {
+  font-size: 25px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+#scanner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#result {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 28%;
+  background-color: transparent;
+  font-size: 22px;
+}
+
+.optionDisactived {
+  color: #022169;
+  font-size: 25px;
+
+  &.active {
+    color: #022169;
+    font-size: 25px;
+  }
+}
+
+.optionRangeLabel {
+  color: #5f719f;
+  font-size: 12px;
+}
+
+.rangeDelay {
+  padding: 0px;
+  height: 24px;
+}
+
+.rangeDelayIcon {
+  color:#5f719f;
+}
+
+.optionDisactivedLabel {
+  color: hsl(222, 96%, 21%);
+  font-size: 10px;
+  min-width: 50px;
+}
+
+.btnBack {
+  color: #022169;
+  font-size: 26px;
+}
+
+ion-title {
+  color: #022169;
+}
+
+.scanditTitle{
+  margin-top: 2px;
+  margin-left: -15px;
+  min-width: 200px;
+}
+
+.scannedCode{
+  color: #022169;
+  font-size: 16px;
+}

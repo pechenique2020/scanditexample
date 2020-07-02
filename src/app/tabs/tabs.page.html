@@ -1,0 +1,35 @@
+<ion-content class="list-avatar-page">
+
+</ion-content>
+
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+
+    <ion-tab-button>
+    </ion-tab-button>
+
+    <ion-tab-button class="tabDesactived" [ngClass]="{'active' : activeTab==1}" tab="tab1" (click)="changeTab(1);">
+      <ion-icon class="optionDisactived" [ngClass]="{'active' : activeTab==1}" name="expand"></ion-icon>
+      <ion-label class="optionDisactived" [ngClass]="{'active' : activeTab==1}">Expandido</ion-label>
+    </ion-tab-button>
+
+    <!-- <ion-tab-button class="tabDesactived" [ngClass]="{'active' : activeTab==2}" tab="tab2"  (click)="changeTab(2);">
+      <ion-icon class="optionDisactived" [ngClass]="{'active' : activeTab==2}" name="barcode-outline"></ion-icon>
+      <ion-label class="optionDisactived" [ngClass]="{'active' : activeTab==2}">Área</ion-label>
+    </ion-tab-button> -->
+
+    <ion-tab-button class="optionDisactivedAlways" [ngClass]="{'active' : activeTab==3}">
+      <!-- tab="tab3" (click)="changeTab(3);"-->
+      <!-- <ion-badge *ngIf="persistenceService.entriesSize>0" color="primary">{{persistenceService.entriesSizeToShow}}
+      </ion-badge> -->
+      <ion-icon class="optionDisactivedAlways" [ngClass]="{'active' : activeTab==3}" name="layers-outline"></ion-icon>
+      <ion-label class="optionDisactivedAlways" [ngClass]="{'active' : activeTab==3}">Múltiple</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+
+</ion-tabs>

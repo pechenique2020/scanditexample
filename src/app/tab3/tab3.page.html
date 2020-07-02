@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Escanéo múltiple
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="list-avatar-page">
+
+  <app-listeans></app-listeans>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed" (click)="goTo_Scanner(3,1);">
+    <ion-fab-button>
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+</ion-content>
